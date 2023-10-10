@@ -1,0 +1,13 @@
+<!-- <span class="bi icon"
+[class.bi-heart-fill]='isLiked'
+[class.bi-heart]='!isLiked'
+(click)="onLiked()"
+></span> {{ likesCount }} -->
+
+<span class="bi icon"
+[ngClass]="{
+  'bi-heart-fill': isLiked,
+  'bi-heart': !isLiked
+}"
+(click)="onLiked()"
+></span> {{ likesCount }}
