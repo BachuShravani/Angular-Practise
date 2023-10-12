@@ -15,7 +15,7 @@ export class ChangePasswordFormComponent {
       newPassword: ['',Validators.required],
       confirmNewPassword: ['',Validators.required]
     },{
-      Validators: PasswordValidators.passwordsShouldMatch
+      validator: PasswordValidators.passwordsShouldMatch
     })
   }
 
